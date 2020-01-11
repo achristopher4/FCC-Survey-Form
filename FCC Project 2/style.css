@@ -1,12 +1,142 @@
+*{
+  font-family: sans-serif, monospace;
+}
+
 body{
   background: lightblue;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#main{
+
 }
 
 header{
+  margin: auto;
+  width: 75%;
+  height: 125px;
+  background-color: grey;
   text-align: center;
+  margin-bottom: 30px;
+}
+#head{
+  padding-top:5px;
+  padding-bottom: 10px;
+}
+#description{
+  font-weight: bold;
+  font-style: italic;
 }
 
 form{
-  background: white;
+  background: rgba(23, 25, 27, 0.25);
+  width: 75%;
+  text-align: center;
+  align-items: center;
+  padding: 20px, auto;
+  display: inline-block;
+}
+
+#label-function{
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  width: 75%;
+  height: auto;
+  text-align: center;
+  align-items: center;
+  padding: 20px, auto;
+  margin: auto;
+}
+.label{
+  font-size: 25px;
+}
+.input{
+  width: 100%;
+  height: 20px;
+  margin-top: 10px;
+  margin-bottom: 15px;
   text-align: center;
 }
+
+#dd-function{
+  font-weight: bold;
+  width: 75%;
+  height: auto;
+  text-align: center;
+  align-items: center;
+  padding: 20px, auto;
+  margin: auto;
+}
+#top{
+  font-size: 25px;
+}
+#dropdown{
+  width: 100%;
+  height: 30px;
+}
+
+.radio-function{
+  font-weight: bold;
+  width: 75%;
+  height: auto;
+  text-align: left;
+  padding: 20px, auto;
+  margin: auto;
+  display: block;
+}
+#top{
+  text-align: center;
+}
+#radio{
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+#checkbox-function{
+  font-weight: bold;
+  width: 75%;
+  height: auto;
+  text-align: left;
+  padding: 20px, auto;
+  margin: auto;
+}
+.checkbox{
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+#textbox{
+  margin-bottom: 25px;
+}
+
+#button{
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  width: 75%;
+  height: auto;
+  display: block;
+}
+#submit{
+  color: black;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 25%;
+  height: 40px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+#submit:hover{
+  background-color: grey;
+}
+
