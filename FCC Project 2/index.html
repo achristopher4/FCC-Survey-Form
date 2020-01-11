@@ -4,64 +4,80 @@
     <link rel="stylesheet"  type="text/css" href="./style.css">
   </head>
 
-  <header>
-    <h1 id="title">Survey Form</h1>
-    <p id="description">Thank you for input to improve my website</p>
-  </header>
+  <body id="whole">
+    <header>
+      <div id="head">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for input to improve my website</p>
+    </div>
+    </header>
 
-  <body>
-    <form id="survey-form" action="index.html" method="post">
-        <label for="name" id="name-label">Name</label>
-        <input id="name" type="text"  name="name" placeholder="First Name" required><br>
+    <main id="main">
+      <form id="survey-form" action="index.html" method="post">
+        <div id="label-function">
+          <label class="label" for="name" id="name-label">Name</label>
+          <input class="input" id="name" type="text"  name="name" placeholder="First Name" required><br>
 
-        <label for="email" id="email-label">Email</label>
-        <input id="email" type="email" name="email" placeholder="Email" required><br>
+          <label class="label" for="email" id="email-label">Email</label>
+          <input class="input" id="email" type="email" name="email" placeholder="Email" required><br>
 
-        <label for="number" id="number-label">Age (optional)</label>
-        <input id="number" type="number" name="number" placeholder="Age" min="5" max="100"><br>
+          <label class="label" for="number" id="number-label">Age (optional)</label>
+          <input class="input" id="number" type="number" name="number" placeholder="Age" min="5" max="100"><br>
+        </div>
 
-        <h3>Which option best describes your current role?</h3>
-        <select id="dropdown" name="Select A Role" required>
-          <option value="" disabled selected>Choose One</option>
-          <option value="Student">Student</option>
-          <option value="Developer">Developer</option>
-          <option value="Learner">Full-Time Learner</option>
-          <option value="Other">Other</option>
-        </select><br>
+        <div id="dd-function">
+          <h3 id="top">Which option best describes your current role?</h3>
+          <select id="dropdown" name="Select A Role" required>
+            <option value="" disabled selected>Choose One</option>
+            <option value="Student">Student</option>
+            <option value="Developer">Developer</option>
+            <option value="Learner">Full-Time Learner</option>
+            <option value="Other">Other</option>
+          </select><br>
+        </div>
 
         <div class="radio-function">
-          <h3>Would you recommend this course to a friend?</h3>
-          <input id="" type="radio" name="recommend" value="Yes Definetly">Yes Definetly<br>
-          <input id="" type="radio" name="recommend" value="Maybe">Maybe<br>
-          <input id="" type="radio" name="recommend" value="Not Sure">Not Sure<br>
+          <h3 id="top">Would you recommend this course to a friend?</h3>
+          <div id="align">
+            <input id="radio" type="radio" name="recommend" value="Yes Definetly">Yes Definetly<br>
+            <input id="radio" type="radio" name="recommend" value="Maybe">Maybe<br>
+            <input id="radio" type="radio" name="recommend" value="Not Sure">Not Sure<br>
+         </div>
         </div>
 
-        <h3>Favorite feature of this website</h3>
-        <select id="dropdown" name="Favorite Feature" required>
-          <option value="" disabled selected>Choose One</option>
-          <option value="Community">Community</option>
-          <option value="Open Source">Open Source</option>
-          <option value="Challenges">Challenges</option>
-          <option value="Other">Other</option>
-        </select><br>
-
-        <div id="">
-          <h3>What would you like to see improved?</h3>
-          <input type="checkbox" name="improve" value="Functionality" checked>Functionality<br>
-          <input type="checkbox" name="improve" value="Web Development">Web Development<br>
-          <input type="checkbox" name="improve" value="Basics">Basics<br>
-          <input type="checkbox" name="improve" value="User Interface">User Interface<br>
+        <div id="dd-function">
+          <h3 id="top">Favorite feature of this website</h3>
+          <select id="dropdown" name="Favorite Feature" required>
+            <option value="" disabled selected>Choose One</option>
+            <option value="Community">Community</option>
+            <option value="Open Source">Open Source</option>
+            <option value="Challenges">Challenges</option>
+            <option value="Other">Other</option>
+          </select><br>
         </div>
 
-        <textarea rows="10" cols="75" placeholder="Thoughts and Comments"></textarea><br>
+        <div id="checkbox-function">
+            <h3 id="top">What would you like to see improved?</h3>
+            <input class="checkbox" type="checkbox" name="improve" value="Functionality" checked>Functionality<br>
+            <input class="checkbox" type="checkbox" name="improve" value="Web Development">Web Development<br>
+            <input class="checkbox" type="checkbox" name="improve" value="Basics">Basics<br>
+            <input class="checkbox" type="checkbox" name="improve" value="User Interface">User Interface<br>
+        </div>
+
+        <div id="textbox-fucntion">
+          <h3 id="top">Any Additional Recommendations</h3>
+          <textarea id="textbox" rows="10" cols="100" placeholder="Thoughts and Comments"></textarea><br>
+        </div>
 
         <div id="button">
           <button value="Submit" id="submit">Submit</button>
         </div>
-    </form>
-  </body>
 
-  <footer>
-    <h2>&copy 2020 Alex C</h2>
-  </footer>
+      </form>
+    </main>
+
+    <footer>
+      <h2>&copy 2020 Alex C</h2>
+    </footer>
+  </body>
 </html>
